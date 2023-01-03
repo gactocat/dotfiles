@@ -26,4 +26,5 @@ keymap('v', 'c', [['_c]], opts)
 keymap('v', 'p', [['_dP]], opts)
 
 -- terminal
+keymap('t', '<C-q>', '<C-w>q', opts)
 keymap('t', '<esc>', [[<C-\><C-n>]], opts)
