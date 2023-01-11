@@ -10,7 +10,7 @@ opt.list = true
 opt.listchars = { tab = '>-', space = '_', trail = '*', nbsp = '+' }
 opt.mouse = 'a'
 opt.number = true
-opt.shiftwidth = 4
+opt.shiftwidth = 2
 opt.smartcase = true
 opt.swapfile = false
 opt.tabstop = 4
