@@ -11,6 +11,6 @@ dap.setup {}
 dapui.setup {}
 
 mason_nvim_dap.setup {
-    automatic_setup = true,
+  automatic_setup = true,
 }
 mason_nvim_dap.setup_handlers {}

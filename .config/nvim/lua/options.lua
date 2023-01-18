@@ -2,6 +2,7 @@ local opt = vim.opt
 
 opt.backup = false
 opt.clipboard:append { 'unnamedplus' }
+opt.cmdheight = 0
 opt.cursorline = true
 opt.completeopt = { 'menu', 'menuone', 'noselect' }
 opt.expandtab = true
