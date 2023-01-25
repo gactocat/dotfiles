@@ -25,6 +25,7 @@ return require('packer').startup(function(use)
   use 'ellisonleao/gruvbox.nvim' -- colorscheme
   use 'nvim-lua/popup.nvim' -- common utility
   use 'nvim-lua/plenary.nvim' -- common utility
+  use 'antoinemadec/FixCursorHold.nvim' -- common utility
   use 'nvim-tree/nvim-web-devicons' -- icon set
   use 'nvim-tree/nvim-tree.lua' -- file explorer
   use 'petertriho/nvim-scrollbar' -- scrollbar
@@ -42,6 +43,10 @@ return require('packer').startup(function(use)
   use 'williamboman/mason-lspconfig.nvim' -- extension to mason and provide command `:LSPInstall`
   use 'glepnir/lspsaga.nvim' -- highly performant UI for LSP
   use 'onsails/lspkind-nvim' -- pictograms for LSP completion items
+
+  -- Test
+  use 'nvim-neotest/neotest'
+  use 'nvim-neotest/neotest-go'
 
   -- completion
   use 'hrsh7th/nvim-cmp'

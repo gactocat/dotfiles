@@ -13,6 +13,7 @@ null_ls.setup {
         group = augroup,
         buffer = bufnr,
       }
+      -- comment out this block to opt out of auto format
       vim.api.nvim_create_autocmd('BufWritePre', {
         group = augroup,
         buffer = bufnr,
