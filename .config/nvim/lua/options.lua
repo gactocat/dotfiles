@@ -8,9 +8,10 @@ opt.completeopt = { 'menu', 'menuone', 'noselect' }
 opt.expandtab = true
 opt.ignorecase = true
 opt.list = true
-opt.listchars = { tab = '>-', space = '_', trail = '*', nbsp = '+' }
+opt.listchars = { tab = '> ', space = '_', trail = '*', nbsp = '+' }
 opt.mouse = 'a'
 opt.number = true
+opt.relativenumber = true
 opt.shiftwidth = 2
 opt.smartcase = true
 opt.swapfile = false

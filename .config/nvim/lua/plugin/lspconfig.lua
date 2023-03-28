@@ -11,6 +11,7 @@ mason_lspconfig.setup {
   ensure_installed = {
     'taplo', -- toml
     'sumneko_lua', -- lua
+    'marksman', -- markdown
     'tsserver', -- ts
     'gopls', -- go
   },

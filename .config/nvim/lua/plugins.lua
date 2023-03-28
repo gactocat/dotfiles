@@ -80,7 +80,6 @@ return require('packer').startup(function(use)
     'iamcco/markdown-preview.nvim',
     run = function() vim.fn['mkdp#util#install']() end,
   }
-  -- use 'jakewvincent/mkdnflow.nvim'
   use 'renerocksai/telekasten.nvim'
   use 'ekickx/clipboard-image.nvim'
   -- use 'adelarsq/image_preview.nvim'
