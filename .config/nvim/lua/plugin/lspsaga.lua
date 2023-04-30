@@ -1,7 +1,8 @@
 local lspsaga_status, lspsaga = pcall(require, 'lspsaga')
 if not lspsaga_status then return end
 
-lspsaga.init_lsp_saga()
+lspsaga.setup {}
+
 
 local keymap = vim.keymap.set
 local opts = { noremap = true, silent = true }
