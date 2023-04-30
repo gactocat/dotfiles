@@ -10,7 +10,7 @@ if not mason_lspconfig_status then return end
 mason_lspconfig.setup {
   ensure_installed = {
     'taplo', -- toml
-    'sumneko_lua', -- lua
+    'lua_ls', -- lua
     'marksman', -- markdown
     'tsserver', -- ts
     'gopls', -- go
