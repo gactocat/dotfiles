@@ -29,6 +29,7 @@ return require('packer').startup(function(use)
   use 'nvim-tree/nvim-web-devicons' -- icon set
   use 'nvim-tree/nvim-tree.lua' -- file explorer
   use 'petertriho/nvim-scrollbar' -- scrollbar
+  use 'kevinhwang91/nvim-hlslens' -- hlsearch lens
   use 'nvim-lualine/lualine.nvim' -- status line
   use 'akinsho/bufferline.nvim' -- file tab
   use 'akinsho/toggleterm.nvim' -- terminal
