@@ -47,6 +47,7 @@ return require('packer').startup(function(use)
   -- Test
   use 'nvim-neotest/neotest'
   use 'nvim-neotest/neotest-go'
+  use 'haydenmeade/neotest-jest'
 
   -- completion
   use 'hrsh7th/nvim-cmp'
