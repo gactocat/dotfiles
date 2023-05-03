@@ -29,3 +29,7 @@ keymap(
 )
 keymap('n', '<leader>o', '<cmd>Lspsaga outline<cr>', opts)
 keymap('n', 'K', '<cmd>Lspsaga hover_doc<cr>', opts)
+
+-- Call hierarchy
+keymap("n", "<Leader>ci", "<cmd>Lspsaga incoming_calls<CR>")
+keymap("n", "<Leader>co", "<cmd>Lspsaga outgoing_calls<CR>")
