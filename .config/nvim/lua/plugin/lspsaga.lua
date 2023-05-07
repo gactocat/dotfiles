@@ -3,7 +3,6 @@ if not lspsaga_status then return end
 
 lspsaga.setup {}
 
-
 local keymap = vim.keymap.set
 local opts = { noremap = true, silent = true }
 
@@ -31,5 +30,5 @@ keymap('n', '<leader>o', '<cmd>Lspsaga outline<cr>', opts)
 keymap('n', 'K', '<cmd>Lspsaga hover_doc<cr>', opts)
 
 -- Call hierarchy
-keymap("n", "<Leader>ci", "<cmd>Lspsaga incoming_calls<CR>")
-keymap("n", "<Leader>co", "<cmd>Lspsaga outgoing_calls<CR>")
+keymap('n', '<Leader>ci', '<cmd>Lspsaga incoming_calls<CR>')
+keymap('n', '<Leader>co', '<cmd>Lspsaga outgoing_calls<CR>')
