@@ -1,7 +1,8 @@
 local wezterm = require 'wezterm'
 
 return {
-  color_scheme = 'Gruvbox Dark',
+  -- color_scheme = 'Gruvbox Dark',
+  color_scheme = 'nightfox',
   enable_tab_bar = false,
   font = wezterm.font_with_fallback {
     'RobotoMono Nerd Font',
@@ -9,7 +10,7 @@ return {
     -- 'SauceCodePro Nerd Font Mono',
     -- 'mplus Nerd Font Mono',
   },
-  font_size = 13,
+  font_size = 14,
   window_padding = {
     left = 0,
     right = 0,

@@ -21,23 +21,30 @@ local packer_bootstrap = ensure_packer()
 return require('packer').startup(function(use)
   use 'wbthomason/packer.nvim' -- packer manage itself
 
-  -- basic
-  use 'ellisonleao/gruvbox.nvim' -- colorscheme
+  -- base
+  -- use 'ellisonleao/gruvbox.nvim' -- colorscheme
+  use 'EdenEast/nightfox.nvim'
   use 'nvim-lua/popup.nvim' -- common utility
   use 'nvim-lua/plenary.nvim' -- common utility
   use 'antoinemadec/FixCursorHold.nvim' -- common utility
   use 'nvim-tree/nvim-web-devicons' -- icon set
-  use 'nvim-tree/nvim-tree.lua' -- file explorer
+
+  -- editor
   use 'petertriho/nvim-scrollbar' -- scrollbar
+  use 'windwp/nvim-autopairs' -- autopairs
   use 'kevinhwang91/nvim-hlslens' -- hlsearch lens
+
+  -- IDE
+  use 'nvim-tree/nvim-tree.lua' -- file explorer
   use 'nvim-lualine/lualine.nvim' -- status line
   use 'akinsho/bufferline.nvim' -- file tab
   use 'akinsho/toggleterm.nvim' -- terminal
   use 'nvim-telescope/telescope.nvim' -- fuzzy finder
-  use 'lewis6991/gitsigns.nvim' -- git
-  use 'dinhhuy258/git.nvim' -- git
-  use 'windwp/nvim-autopairs'
   use 'williamboman/mason.nvim' -- manage LSP servers, DAP servers, linters, and formatters
+
+  -- Git
+  use 'lewis6991/gitsigns.nvim' -- signs for changed lines
+  use 'dinhhuy258/git.nvim' -- git wrapper
 
   -- LSP
   use 'neovim/nvim-lspconfig' -- LSP client
@@ -52,14 +59,14 @@ return require('packer').startup(function(use)
   use 'hrsh7th/cmp-cmdline'
   use 'hrsh7th/cmp-nvim-lsp'
 
+  -- snipet
+  use 'L3MON4D3/LuaSnip'
+  use 'saadparwaiz1/cmp_luasnip'
+
   -- Test
   use 'nvim-neotest/neotest'
   use 'nvim-neotest/neotest-go'
   use 'haydenmeade/neotest-jest'
-
-  -- snipet
-  use 'L3MON4D3/LuaSnip'
-  use 'saadparwaiz1/cmp_luasnip'
 
   -- syntax highlight
   use {
@@ -71,7 +78,7 @@ return require('packer').startup(function(use)
   use 'jose-elias-alvarez/null-ls.nvim'
   use 'jayp0521/mason-null-ls.nvim'
 
-  -- nvim-dap
+  -- dap
   use 'mfussenegger/nvim-dap'
   use 'rcarriga/nvim-dap-ui'
   use 'leoluz/nvim-dap-go'
@@ -84,7 +91,6 @@ return require('packer').startup(function(use)
   }
   use 'renerocksai/telekasten.nvim'
   use 'ekickx/clipboard-image.nvim'
-  -- use 'adelarsq/image_preview.nvim'
 
   if packer_bootstrap then require('packer').sync() end
 end)
