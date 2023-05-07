@@ -4,39 +4,22 @@ if not null_ls_status then return end
 local mason_null_ls_status, mason_null_ls = pcall(require, 'mason-null-ls')
 if not mason_null_ls_status then return end
 
-local augroup = vim.api.nvim_create_augroup('LspFormatting', {})
-
 null_ls.setup {
-  on_attach = function(current_client, bufnr)
-    if current_client.supports_method 'textDocument/formatting' then
-      vim.api.nvim_clear_autocmds {
-        group = augroup,
-        buffer = bufnr,
-      }
-      -- comment out this block to opt out of auto format
-      vim.api.nvim_create_autocmd('BufWritePre', {
-        group = augroup,
-        buffer = bufnr,
-        callback = function()
-          vim.lsp.buf.format {
-            filter = function(client) return client.name == 'null-ls' end,
-            bufnr = bufnr,
-          }
-        end,
-      })
-    end
-  end,
+  -- cf. https://github.com/jose-elias-alvarez/null-ls.nvim/blob/main/doc/BUILTINS.md
+  sources = {
+    null_ls.builtins.completion.luasnip,        -- all
+    null_ls.builtins.completion.spell,          -- all
+    null_ls.builtins.code_actions.refactoring,  -- go, js, ts, lua, python
+    null_ls.builtins.formatting.stylua,         -- lua
+    null_ls.builtins.diagnostics.eslint,        -- js, ts
+    null_ls.builtins.formatting.prettier,       -- js, ts, html, css, json, yaml, etc...
+    null_ls.builtins.formatting.gofumpt,        -- go
+    null_ls.builtins.diagnostics.golangci_lint, -- go
+    null_ls.builtins.formatting.goimports,      -- go
+  },
 }
 
 mason_null_ls.setup {
-  ensure_installed = {
-    'stylua', -- lua
-    'jq', -- json
-    'prettier', -- js/ts
-    'gofumpt', -- go
-    'goimports',
-    'golangci_lint',
-  },
-  automatic_setup = true,
+  ensure_installed = nil,
+  automatic_installation = true,
 }
-mason_null_ls.setup_handlers()
