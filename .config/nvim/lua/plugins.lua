@@ -22,33 +22,28 @@ return require('packer').startup(function(use)
   use 'wbthomason/packer.nvim' -- packer manage itself
 
   -- basic
-  use 'ellisonleao/gruvbox.nvim' -- colorscheme
-  use 'nvim-lua/popup.nvim' -- common utility
-  use 'nvim-lua/plenary.nvim' -- common utility
+  use 'ellisonleao/gruvbox.nvim'        -- colorscheme
+  use 'nvim-lua/popup.nvim'             -- common utility
+  use 'nvim-lua/plenary.nvim'           -- common utility
   use 'antoinemadec/FixCursorHold.nvim' -- common utility
-  use 'nvim-tree/nvim-web-devicons' -- icon set
-  use 'nvim-tree/nvim-tree.lua' -- file explorer
-  use 'petertriho/nvim-scrollbar' -- scrollbar
-  use 'kevinhwang91/nvim-hlslens' -- hlsearch lens
-  use 'nvim-lualine/lualine.nvim' -- status line
-  use 'akinsho/bufferline.nvim' -- file tab
-  use 'akinsho/toggleterm.nvim' -- terminal
-  use 'nvim-telescope/telescope.nvim' -- fuzzy finder
-  use 'lewis6991/gitsigns.nvim' -- git
-  use 'dinhhuy258/git.nvim' -- git
+  use 'nvim-tree/nvim-web-devicons'     -- icon set
+  use 'nvim-tree/nvim-tree.lua'         -- file explorer
+  use 'petertriho/nvim-scrollbar'       -- scrollbar
+  use 'kevinhwang91/nvim-hlslens'       -- hlsearch lens
+  use 'nvim-lualine/lualine.nvim'       -- status line
+  use 'akinsho/bufferline.nvim'         -- file tab
+  use 'akinsho/toggleterm.nvim'         -- terminal
+  use 'nvim-telescope/telescope.nvim'   -- fuzzy finder
+  use 'lewis6991/gitsigns.nvim'         -- git
+  use 'dinhhuy258/git.nvim'             -- git
   use 'windwp/nvim-autopairs'
-  use 'williamboman/mason.nvim' -- manage LSP servers, DAP servers, linters, and formatters
+  use 'williamboman/mason.nvim'         -- manage LSP servers, DAP servers, linters, and formatters
 
   -- LSP
-  use 'neovim/nvim-lspconfig' -- LSP client
+  use 'neovim/nvim-lspconfig'             -- LSP client
   use 'williamboman/mason-lspconfig.nvim' -- extension to mason and provide command `:LSPInstall`
-  use 'glepnir/lspsaga.nvim' -- highly performant UI for LSP
-  use 'onsails/lspkind-nvim' -- pictograms for LSP completion items
-
-  -- Test
-  use 'nvim-neotest/neotest'
-  use 'nvim-neotest/neotest-go'
-  use 'haydenmeade/neotest-jest'
+  use 'glepnir/lspsaga.nvim'              -- highly performant UI for LSP
+  use 'onsails/lspkind-nvim'              -- pictograms for LSP completion items
 
   -- completion
   use 'hrsh7th/nvim-cmp'
@@ -56,6 +51,11 @@ return require('packer').startup(function(use)
   use 'hrsh7th/cmp-path'
   use 'hrsh7th/cmp-cmdline'
   use 'hrsh7th/cmp-nvim-lsp'
+
+  -- Test
+  use 'nvim-neotest/neotest'
+  use 'nvim-neotest/neotest-go'
+  use 'haydenmeade/neotest-jest'
 
   -- snipet
   use 'L3MON4D3/LuaSnip'
