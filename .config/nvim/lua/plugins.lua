@@ -22,8 +22,8 @@ return require('packer').startup(function(use)
   use 'wbthomason/packer.nvim' -- packer manage itself
 
   -- base
+  use 'EdenEast/nightfox.nvim' -- colorscheme
   -- use 'ellisonleao/gruvbox.nvim' -- colorscheme
-  use 'EdenEast/nightfox.nvim'
   use 'nvim-lua/popup.nvim' -- common utility
   use 'nvim-lua/plenary.nvim' -- common utility
   use 'antoinemadec/FixCursorHold.nvim' -- common utility

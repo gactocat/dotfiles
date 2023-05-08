@@ -12,13 +12,13 @@ treesitter.setup {
     'dockerfile',
     'gitignore',
 
-    'lua',
     'html',
     'css',
     'javascript',
     'typescript',
-    'tsx',
+    'lua',
     'go',
+    'tsx',
     'rust',
   },
 }
