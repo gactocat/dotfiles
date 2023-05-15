@@ -63,6 +63,9 @@ return require('packer').startup(function(use)
   use 'L3MON4D3/LuaSnip'
   use 'saadparwaiz1/cmp_luasnip'
 
+  -- Copilot
+  use 'github/copilot.vim'
+
   -- Test
   use 'nvim-neotest/neotest'
   use 'nvim-neotest/neotest-go'
