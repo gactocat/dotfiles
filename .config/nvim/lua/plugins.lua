@@ -51,6 +51,7 @@ return require('packer').startup(function(use)
   use 'williamboman/mason-lspconfig.nvim' -- extension to mason and provide command `:LSPInstall`
   use 'glepnir/lspsaga.nvim' -- highly performant UI for LSP
   use 'onsails/lspkind-nvim' -- pictograms for LSP completion items
+  use 'https://git.sr.ht/~whynothugo/lsp_lines.nvim'
 
   -- completion
   use 'hrsh7th/nvim-cmp'
