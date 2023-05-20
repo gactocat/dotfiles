@@ -4,3 +4,7 @@ if not lsplines_status then return end
 lsplines.setup {}
 
 vim.keymap.set('', '<Leader>l', lsplines.toggle, { desc = 'Toggle lsp_lines' })
+
+vim.diagnostic.config({
+  virtual_text = false,
+})
