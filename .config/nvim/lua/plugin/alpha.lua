@@ -4,9 +4,10 @@ if not alpha_status then return end
 local dashboard_status, dashboard = pcall(require, 'alpha.themes.dashboard')
 if not dashboard_status then return end
 
--- alpha.setup(dashboard.config)
-
 dashboard.section.header.val = {
+  [[                                                 ]],
+  [[                                                 ]],
+  [[                                                 ]],
   [[                               __                ]],
   [[  ___     ___    ___   __  __ /\_\    ___ ___    ]],
   [[ / _ `\  / __`\ / __`\/\ \/\ \\/\ \  / __` __`\  ]],

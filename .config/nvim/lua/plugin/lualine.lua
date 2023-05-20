@@ -5,6 +5,7 @@ lualine.setup {
   options = {
     theme = 'nightfly',
     disabled_filetypes = {
+      'alpha',
       'NvimTree',
       'toggleterm',
     },
