@@ -6,6 +6,7 @@ lspsaga.setup {}
 local keymap = vim.keymap.set
 local opts = { noremap = true, silent = true }
 
+keymap('n', 'gd', '<cmd>Lspsaga goto_definition<cr>')
 keymap('n', 'gh', '<cmd>Lspsaga lsp_finder<cr>', opts)
 keymap({ 'n', 'v' }, '<leader>ca', '<cmd>Lspsaga code_action<cr>', opts)
 keymap('n', '<leader>rn', '<cmd>Lspsaga rename<cr>', opts)

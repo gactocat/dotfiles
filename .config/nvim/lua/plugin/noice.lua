@@ -18,3 +18,9 @@ noice.setup {
     lsp_doc_border = false, -- add a border to hover docs and signature help
   },
 }
+
+local keymap = vim.keymap.set
+local opts = { noremap = true, silent = true }
+keymap('n', '<leader>nn', '<cmd>Noice dismiss<cr>', opts)
+keymap('n', '<leader>nl', '<cmd>Noice last<cr>', opts)
+keymap('n', '<leader>ne', '<cmd>Noice errors<cr>', opts)

@@ -23,8 +23,6 @@ mason_lspconfig.setup_handlers {
       capabilities = cmp_nvim_lsp.default_capabilities(),
       on_attach = function(_, bufnr)
         local bufopts = { noremap = true, silent = true, buffer = bufnr }
-        vim.keymap.set('n', 'gd', vim.lsp.buf.definition, bufopts)
-        vim.keymap.set('n', '<C-k>', vim.lsp.buf.signature_help, bufopts)
         vim.keymap.set('n', '<leader>j', function() vim.lsp.buf.format { async = true } end, bufopts)
       end,
     }

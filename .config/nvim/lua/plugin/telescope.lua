@@ -1,12 +1,21 @@
 local telescope_status, telescope = pcall(require, 'telescope')
 if not telescope_status then return end
 
-telescope.setup {}
+local trouble = require 'trouble.providers.telescope'
+
+telescope.setup {
+  defaults = {
+    mappings = {
+      i = { ['<c-t>'] = trouble.open_with_trouble },
+      n = { ['<c-t>'] = trouble.open_with_trouble },
+    },
+  },
+}
 
 local keymap = vim.keymap.set
-local builtin = require 'telescope.builtin'
 local opts = { noremap = true, silent = true }
 
+local builtin = require 'telescope.builtin'
 keymap('n', '<leader>ff', builtin.find_files, opts)
 keymap('n', '<leader>fg', builtin.live_grep, opts)
 keymap('n', '<leader>fd', builtin.grep_string, opts)
