@@ -1,7 +1,8 @@
 local telescope_status, telescope = pcall(require, 'telescope')
 if not telescope_status then return end
 
-local trouble = require 'trouble.providers.telescope'
+local trouble_status, trouble = pcall(require, 'trouble.providers.telescope')
+if not trouble_status then return end
 
 telescope.setup {
   defaults = {
