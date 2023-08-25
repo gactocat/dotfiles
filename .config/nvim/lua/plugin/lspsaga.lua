@@ -14,7 +14,6 @@ keymap({ 'n', 'v' }, '<leader>ca', '<cmd>Lspsaga code_action<cr>', opts)
 keymap('n', '<leader>rn', '<cmd>Lspsaga rename<cr>', opts)
 keymap('n', 'gp', '<cmd>Lspsaga peek_definition<cr>', opts)
 keymap('n', '<leader>cd', '<cmd>Lspsaga show_line_diagnostics<cr>', opts)
-keymap('n', '<leader>cd', '<cmd>Lspsaga show_cursor_diagnostics<cr>', opts)
 keymap('n', '[e', '<cmd>Lspsaga diagnostic_jump_prev<cr>', opts)
 keymap('n', ']e', '<cmd>Lspsaga diagnostic_jump_next<cr>', opts)
 keymap(

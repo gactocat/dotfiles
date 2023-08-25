@@ -23,3 +23,4 @@ local opts = { noremap = true }
 
 keymap('n', '<leader>tn', '<cmd>lua require "neotest".run.run()<cr>', opts)
 keymap('n', '<leader>tf', '<cmd>lua require "neotest".run.run(vim.fn.expand("%"))<cr>', opts)
+keymap('n', '<leader>to', '<cmd>lua require "neotest".output_panel.open()<cr>', opts)
