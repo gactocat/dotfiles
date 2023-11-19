@@ -10,6 +10,7 @@ zmodule exa
 # Prompt
 zmodule eriner
 zmodule git-info
+zmodule prompt-pwd 
 
 # Completion
 zmodule zsh-users/zsh-completions --fpath src
