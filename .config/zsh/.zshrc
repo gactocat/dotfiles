@@ -37,4 +37,3 @@ unset key
 
 [ -f ${ZDOTDIR:-${HOME}}/.zshrc-export ] && source ${ZDOTDIR:-${HOME}}/.zshrc-export
 
-alias v='nvim'
