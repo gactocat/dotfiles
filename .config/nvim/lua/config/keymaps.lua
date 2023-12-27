@@ -8,6 +8,3 @@ map('n', '<S-Down>', '<cmd>resize -2<cr>', { desc = 'Decrease window height' })
 map('n', '<S-Right>', '<cmd>vertical resize +2<cr>', { desc = 'Increase window width' })
 map('n', '<S-Left>', '<cmd>vertical resize -2<cr>', { desc = 'Decrease window width' })
 map('n', '<c-q>', '<c-w>q', { desc = 'Close window' })
-
-map('n', '+', '<C-a>', { desc = 'Increment number' })
-map('n', '-', '<C-x>', { desc = 'Decrement number' })
