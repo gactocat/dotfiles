@@ -12,6 +12,9 @@ return {
 		-- 'mplus Nerd Font Mono',
 	}),
 	font_size = 15,
+	keys = {
+		{ key = "/", mods = "CTRL", action = wezterm.action.SendString("\x1f") },
+	},
 	window_padding = {
 		left = 10,
 		right = 10,
