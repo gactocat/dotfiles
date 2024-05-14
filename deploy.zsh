@@ -11,6 +11,7 @@ fi
 
 cd "$DOTPATH" || exit 1
 
+mkdir -p "$HOME/.config"
 ln -fvns "$DOTPATH/.config/gitui" "$HOME/.config/gitui"
 ln -fvns "$DOTPATH/.config/tmux" "$HOME/.config/tmux"
 ln -fvns "$DOTPATH/.config/wezterm" "$HOME/.config/wezterm"
