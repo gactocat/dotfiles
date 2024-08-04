@@ -2,8 +2,8 @@ local wezterm = require("wezterm")
 
 return {
 	-- color_scheme = 'Gruvbox Dark',
-	-- color_scheme = 'nightfox',
-	color_scheme = "tokyonight",
+	color_scheme = "nightfox",
+	-- color_scheme = "tokyonight",
 	enable_tab_bar = false,
 	font = wezterm.font_with_fallback({
 		"RobotoMono Nerd Font",
@@ -11,7 +11,7 @@ return {
 		-- 'SauceCodePro Nerd Font Mono',
 		-- 'mplus Nerd Font Mono',
 	}),
-	font_size = 15,
+	font_size = 13,
 	keys = {
 		{ key = "/", mods = "CTRL", action = wezterm.action.SendString("\x1f") },
 	},

@@ -8,7 +8,10 @@ return {
         '*esa.io',
       },
       group = 'nvim_ghost_user_autocommands',
-      callback = function() vim.opt.filetype = 'markdown' end,
+      callback = function()
+        vim.opt.filetype = 'markdown'
+        vim.opt.shiftwidth = 2
+      end,
     })
   end,
 }
