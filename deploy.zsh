@@ -26,5 +26,8 @@ ln -fvns "$DOTPATH/.config/zsh/.fzf.zsh" "$HOME/.config/zsh/.fzf.zsh"
 ln -fvns "$DOTPATH/.config/zsh/.zimrc" "$HOME/.config/zsh/.zimrc"
 ln -fvns "$DOTPATH/.config/zsh/.zshrc" "$HOME/.config/zsh/.zshrc"
 
+mkdir -p "$HOME/.config/aerospace"
+ln -fvns "$DOTPATH/.config/aerospace/aerospace.toml" "$HOME/.config/aerospace/aerospace.toml"
+
 ln -fvns "$DOTPATH/.gitconfig" "$HOME/.gitconfig"
 ln -fvns "$DOTPATH/.gitignore" "$HOME/.gitignore"
