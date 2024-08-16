@@ -3,7 +3,7 @@ local wezterm = require 'wezterm'
 return {
   color_scheme = 'tokyonight',
   colors = {
-    background = '#181818',
+    background = '#141414',
   },
 
   hide_tab_bar_if_only_one_tab = true,
