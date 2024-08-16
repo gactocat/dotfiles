@@ -11,7 +11,7 @@ return {
 		-- 'SauceCodePro Nerd Font Mono',
 		-- 'mplus Nerd Font Mono',
 	}),
-	font_size = 13,
+	font_size = 14,
 	keys = {
 		{ key = "/", mods = "CTRL", action = wezterm.action.SendString("\x1f") },
 	},
