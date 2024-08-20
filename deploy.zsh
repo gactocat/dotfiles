@@ -29,5 +29,12 @@ ln -fvns "$DOTPATH/.config/zsh/.zshrc" "$HOME/.config/zsh/.zshrc"
 mkdir -p "$HOME/.config/aerospace"
 ln -fvns "$DOTPATH/.config/aerospace/aerospace.toml" "$HOME/.config/aerospace/aerospace.toml"
 
+mkdir -p "$HOME/.config/git"
+ln -fvns "$DOTPATH/.config/git/commit_template_with_prompt.txt" "$HOME/.config/git/commit_template_with_prompt.txt"
+
+mkdir -p "$HOME/Library/Application Support/lazygit"
+ln -fvns "$DOTPATH/.config/lazygit/config.yml" "$HOME/Library/Application Support/lazygit/config.yml"
+
+
 ln -fvns "$DOTPATH/.gitconfig" "$HOME/.gitconfig"
 ln -fvns "$DOTPATH/.gitignore" "$HOME/.gitignore"
