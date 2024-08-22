@@ -3,18 +3,15 @@ local wezterm = require 'wezterm'
 return {
   color_scheme = 'tokyonight',
   colors = {
-    background = '#141414',
+    -- background = '#222222',
   },
 
   hide_tab_bar_if_only_one_tab = true,
   hide_mouse_cursor_when_typing = true,
 
-  font = wezterm.font_with_fallback {
-    'RobotoMono Nerd Font',
-    -- 'Hack Nerd Font Mono',
-    -- 'SauceCodePro Nerd Font Mono',
-  },
-  font_size = 13,
+  -- font = wezterm.font('RobotoMono Nerd Font', { weight = 'Bold' }),
+  font = wezterm.font('JetBrains Mono', { weight = 'Bold' }),
+  font_size = 12,
 
   keys = {
     { key = '/', mods = 'CTRL', action = wezterm.action.SendString '\x1f' },
@@ -27,6 +24,6 @@ return {
     top = 10,
     bottom = 10,
   },
-  window_background_opacity = 0.84,
-  macos_window_background_blur = 10,
+  window_background_opacity = 0.85,
+  macos_window_background_blur = 8,
 }
