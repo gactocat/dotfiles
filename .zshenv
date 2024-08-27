@@ -10,4 +10,3 @@ export PATH="$PATH:/opt/homebrew/bin"
 # z
 . `brew --prefix`/etc/profile.d/z.sh
 
-alias v='nvim'
