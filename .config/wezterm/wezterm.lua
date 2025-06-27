@@ -3,7 +3,7 @@ local wezterm = require 'wezterm'
 return {
   color_scheme = 'tokyonight',
   colors = {
-    -- background = '#222222',
+    background = '#111111',
   },
 
   hide_tab_bar_if_only_one_tab = true,
@@ -11,10 +11,11 @@ return {
 
   -- font = wezterm.font('RobotoMono Nerd Font', { weight = 'Bold' }),
   font = wezterm.font('JetBrains Mono', { weight = 'Bold' }),
-  font_size = 13,
+  font_size = 12,
 
   keys = {
     { key = '/', mods = 'CTRL', action = wezterm.action.SendString '\x1f' },
+    { key = 'Enter', mods = 'ALT', action = wezterm.action.DisableDefaultAssignment },
   },
 
   window_decorations = 'RESIZE',
@@ -24,6 +25,6 @@ return {
     top = 10,
     bottom = 10,
   },
-  window_background_opacity = 0.85,
+  window_background_opacity = 0.88,
   macos_window_background_blur = 8,
 }
