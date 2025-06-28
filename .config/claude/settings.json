@@ -1,0 +1,20 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(find:*)",
+      "Bash(ls:*)",
+      "Bash(mv:*)",
+      "Bash(mkdir:*)",
+      "Bash(git:*)",
+      "Bash(make:*)",
+      "Bash(npm:*)",
+      "Bash(git:*)",
+      "Bash(gh:*)",
+      "Bash(go:*)",
+      "Read(**)",
+      "Edit(~/projects/**)",
+      "WebFetch(domain:*)"
+    ]
+  },
+  "cleanupPeriodDays": 60
+}

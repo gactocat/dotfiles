@@ -34,6 +34,10 @@ ln -fvns "$DOTPATH/.config/aerospace/aerospace.toml" "$HOME/.config/aerospace/ae
 mkdir -p "$HOME/.config/git"
 ln -fvns "$DOTPATH/.config/git/commit_template_with_prompt.txt" "$HOME/.config/git/commit_template_with_prompt.txt"
 
+mkdir -p "$HOME/.claude"
+ln -fvns "$DOTPATH/.config/claude/CLAUDE.md" "$HOME/.claude/CLAUDE.md"
+ln -fvns "$DOTPATH/.config/claude/settings.toml" "$HOME/.claude/settings.toml"
+
 mkdir -p "$HOME/Library/Application Support/lazygit"
 ln -fvns "$DOTPATH/.config/lazygit/config.yml" "$HOME/Library/Application Support/lazygit/config.yml"
 
