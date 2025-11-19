@@ -1,6 +1,6 @@
 return {
-  'CopilotC-Nvim/CopilotChat.nvim',
-  opts = {
-    model = 'gpt-4o',
-  },
+  --  'CopilotC-Nvim/CopilotChat.nvim',
+  --  opts = {
+  --    model = 'gpt-4o',
+  --  },
 }
