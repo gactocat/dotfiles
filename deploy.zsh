@@ -38,7 +38,7 @@ mkdir -p "$HOME/.claude"
 ln -fvns "$DOTPATH/config/claude/CLAUDE.md" "$HOME/.claude/CLAUDE.md"
 ln -fvns "$DOTPATH/config/claude/settings.toml" "$HOME/.claude/settings.toml"
 
-mkdir -p "$HOME/.claude"
+mkdir -p "$HOME/.codex"
 ln -fvns "$DOTPATH/config/codex/AGENTS.md" "$HOME/.codex/AGENTS.md"
 ln -fvns "$DOTPATH/config/codex/config.toml" "$HOME/.codex/config.toml"
 
