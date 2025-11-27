@@ -1,0 +1,11 @@
+brew "awscli"
+cask "devutils"
+brew "ffmpeg"
+brew "gh"
+brew "ghq"
+brew "jq"
+brew "lazygit"
+brew "mise"
+brew "neovim"
+
+

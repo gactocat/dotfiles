@@ -13,5 +13,11 @@ if ! command -v brew > /dev/null 2>&1; then
     echo
 fi
 
-brew bundle
+# Get the directory where this script is located
+SCRIPT_DIR="$(cd "$(dirname "${(%):-%x}")" && pwd)"
+BREW_DIR="${SCRIPT_DIR}/brew"
+
+brew bundle --file="${BREW_DIR}/Brewfile.core"
+brew bundle --file="${BREW_DIR}/Brewfile.dev"
+brew bundle --file="${BREW_DIR}/Brewfile.apps"
 

@@ -11,6 +11,7 @@ alias l='eza -l --icons'
 alias la='eza -la --icons'
 alias v='nvim'
 alias g='git'
+alias lg='lazygit'
 
 [ -f ${ZDOTDIR:-${HOME}}/.zshrc-export ] && source ${ZDOTDIR:-${HOME}}/.zshrc-export
 
@@ -26,3 +27,6 @@ fi
 
 export STARSHIP_CONFIG=~/.config/starship/starship.toml
 eval "$(starship init zsh)"
+
+# z
+. `brew --prefix`/etc/profile.d/z.sh
