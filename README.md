@@ -26,3 +26,28 @@ To add a new Homebrew package:
 ```shell
 ./brew.zsh
 ```
+
+## Installing languages with mise
+
+mise is included in `brew/Brewfile.dev` and available after setup.
+
+To install a language globally:
+
+```shell
+mise use --global go@latest
+mise use --global node@lts
+mise use --global python@3.12
+```
+
+To use a specific version in a project (creates `.mise.toml`):
+
+```shell
+cd each-project
+mise use node@20
+```
+
+To list installed languages:
+
+```shell
+mise list
+```

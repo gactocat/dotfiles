@@ -1,6 +1,7 @@
 HISTFILE=~/.zsh_history
 HISTSIZE=100000
 SAVEHIST=100000
+
 setopt share_history
 setopt hist_ignore_dups
 setopt hist_ignore_all_dups
@@ -12,8 +13,6 @@ alias la='eza -la --icons'
 alias v='nvim'
 alias g='git'
 alias lg='lazygit'
-
-[ -f ${ZDOTDIR:-${HOME}}/.zshrc-export ] && source ${ZDOTDIR:-${HOME}}/.zshrc-export
 
 source ${ZDOTDIR:-${HOME}}/.fzf.zsh
 
@@ -30,3 +29,9 @@ eval "$(starship init zsh)"
 
 # z
 . `brew --prefix`/etc/profile.d/z.sh
+
+# homebrew
+export PATH="$PATH:/opt/homebrew/bin"
+
+# mise
+eval "$(mise activate zsh)"
