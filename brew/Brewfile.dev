@@ -3,9 +3,16 @@ cask "devutils"
 brew "ffmpeg"
 brew "gh"
 brew "ghq"
+brew "git"
 brew "jq"
 brew "lazygit"
 brew "mise"
 brew "neovim"
+
+cask "claude-code"
+cask "cursor"
+cask "docker-desktop"
+cask "gcloud-cli"
+cask "intellij-idea"
 
 
