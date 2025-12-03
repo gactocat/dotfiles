@@ -30,8 +30,5 @@ eval "$(starship init zsh)"
 # z
 . `brew --prefix`/etc/profile.d/z.sh
 
-# homebrew
-export PATH="$PATH:/opt/homebrew/bin"
-
 # mise
 eval "$(mise activate zsh)"
