@@ -10,9 +10,13 @@ setopt hist_reduce_blanks
 
 alias l='eza -l --icons'
 alias la='eza -la --icons'
+
 alias v='nvim'
 alias g='git'
 alias lg='lazygit'
+
+alias ghr="gh api --paginate /user/repos --jq '.[].full_name' | fzf"
+alias ghcd="cd \$(ghq root)/\$(ghq list | fzf)"
 
 source ${ZDOTDIR:-${HOME}}/.fzf.zsh
 
