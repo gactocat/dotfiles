@@ -3,18 +3,8 @@ cask "chatgpt"
 cask "claude"
 cask "cleanshot"
 cask "discord"
-cask "line"
 cask "notion"
 cask "numi"
 cask "obsidian"
 cask "slack"
 cask "spotify"
-
-
-
-
-
-
-
-
-

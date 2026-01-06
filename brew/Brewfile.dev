@@ -15,12 +15,3 @@ cask "cursor"
 cask "docker-desktop"
 cask "gcloud-cli"
 cask "intellij-idea"
-
-
-
-
-
-
-
-
-
