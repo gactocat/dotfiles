@@ -1,3 +1,5 @@
+tap "d-kuro/tap"
+
 brew "aqua"
 brew "awscli"
 cask "devutils"
@@ -5,10 +7,12 @@ brew "ffmpeg"
 brew "gh"
 brew "ghq"
 brew "git"
+brew "gwq"
 brew "jq"
 brew "lazygit"
 brew "mise"
 brew "neovim"
+brew "jj"
 
 cask "claude-code"
 cask "cursor"

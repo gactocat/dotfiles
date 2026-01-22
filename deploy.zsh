@@ -37,6 +37,9 @@ ln -fvns "$DOTPATH/config/mise/config.toml" "$HOME/.config/mise/config.toml"
 mkdir -p "$HOME/.config/aerospace"
 ln -fvns "$DOTPATH/config/aerospace/aerospace.toml" "$HOME/.config/aerospace/aerospace.toml"
 
+mkdir -p "$HOME/.config/gwq"
+ln -fvns "$DOTPATH/config/gwq/config.toml" "$HOME/.config/gwq/config.toml"
+
 mkdir -p "$HOME/.config/git"
 ln -fvns "$DOTPATH/config/git/commit_template_with_prompt.txt" "$HOME/.config/git/commit_template_with_prompt.txt"
 
