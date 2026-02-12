@@ -11,7 +11,7 @@ return {
 
   -- font = wezterm.font('RobotoMono Nerd Font', { weight = 'Bold' }),
   font = wezterm.font('JetBrains Mono', { weight = 'Bold' }),
-  font_size = 14,
+  font_size = 12,
 
   keys = {
     { key = '/', mods = 'CTRL', action = wezterm.action.SendString '\x1f' },

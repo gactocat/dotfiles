@@ -27,6 +27,7 @@ ln -fvns "$DOTPATH/.zshenv" "$HOME/.zshenv"
 ln -fvns "$DOTPATH/config/zsh/.fzf.zsh" "$HOME/.config/zsh/.fzf.zsh"
 ln -fvns "$DOTPATH/config/zsh/.zimrc" "$HOME/.config/zsh/.zimrc"
 ln -fvns "$DOTPATH/config/zsh/.zshrc" "$HOME/.config/zsh/.zshrc"
+ln -fvns "$DOTPATH/config/zsh/.zsh-function" "$HOME/.config/zsh/.zsh-function"
 
 mkdir -p "$HOME/.config/karabiner"
 ln -fvns "$DOTPATH/config/karabiner/karabiner.json" "$HOME/.config/karabiner/karabiner.json"

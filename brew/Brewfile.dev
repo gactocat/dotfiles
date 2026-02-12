@@ -13,6 +13,7 @@ brew "lazygit"
 brew "mise"
 brew "neovim"
 brew "jj"
+brew "ripgrep"
 
 cask "claude-code"
 cask "cursor"

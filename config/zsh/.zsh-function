@@ -1,0 +1,29 @@
+function ghq-path() {
+    ghq list --full-path | fzf
+}
+
+function dev() {
+    local moveto
+    moveto=$(ghq-path)
+    cd "${moveto}" || exit 1
+
+    # rename window if in tmux
+    if [[ -n "$TMUX" ]]; then
+        local repo_name
+        repo_name="${moveto##*/}"
+
+        tmux rename-window "${repo_name//./-}"
+    fi
+}
+
+function ghr() {
+    gh api --paginate /user/repos --jq '.[].full_name' | fzf
+}
+
+function ghget() {
+    gh api --paginate /user/repos --jq '.[].full_name' | fzf | xargs -I {} ghq get {}
+}
+
+function ghcd() {
+    cd $(ghq root)/$(ghq list | fzf)
+}
