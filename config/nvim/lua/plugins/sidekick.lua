@@ -1,28 +1,28 @@
 return {
-  'folke/sidekick.nvim',
-  opts = function()
-    -- Accept inline suggestions or next edits
-    LazyVim.cmp.actions.ai_nes = function()
-      local Nes = require 'sidekick.nes'
-      if Nes.have() and (Nes.jump() or Nes.apply()) then return true end
-    end
-
-    return {
-      cli = {
-        tools = {
-          claude = {
-            cmd = { 'claude', '--dangerously-skip-permissions' },
-          },
-        },
-      },
-    }
-  end,
-  keys = {
-    {
-      '<leader>ac',
-      function() require('sidekick.cli').toggle { name = 'claude', focus = true } end,
-      desc = 'Sidekick Claude Toggle',
-      mode = { 'n', 'v' },
-    },
-  },
+  --   'folke/sidekick.nvim',
+  --   opts = function()
+  --     -- Accept inline suggestions or next edits
+  --     LazyVim.cmp.actions.ai_nes = function()
+  --       local Nes = require 'sidekick.nes'
+  --       if Nes.have() and (Nes.jump() or Nes.apply()) then return true end
+  --     end
+  --
+  --     return {
+  --       cli = {
+  --         tools = {
+  --           claude = {
+  --             cmd = { 'claude', '--dangerously-skip-permissions' },
+  --           },
+  --         },
+  --       },
+  --     }
+  --   end,
+  --   keys = {
+  --     {
+  --       '<leader>ac',
+  --       function() require('sidekick.cli').toggle { name = 'claude', focus = true } end,
+  --       desc = 'Sidekick Claude Toggle',
+  --       mode = { 'n', 'v' },
+  --     },
+  --   },
 }

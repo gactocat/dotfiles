@@ -25,6 +25,6 @@ return {
     top = 10,
     bottom = 10,
   },
-  window_background_opacity = 0.8,
-  macos_window_background_blur = 8,
+  window_background_opacity = 0.9,
+  macos_window_background_blur = 9,
 }

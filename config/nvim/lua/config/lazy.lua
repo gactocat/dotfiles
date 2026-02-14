@@ -10,9 +10,12 @@ vim.opt.rtp:prepend(vim.env.LAZY or lazypath)
 require('lazy').setup {
   spec = {
     { 'LazyVim/LazyVim', import = 'lazyvim.plugins' },
-    { import = 'lazyvim.plugins.extras.ai.codeium' },
-    { import = 'lazyvim.plugins.extras.ai.sidekick' },
+    -- { import = 'lazyvim.plugins.extras.ai.codeium' },
+    -- { import = 'lazyvim.plugins.extras.ai.sidekick' },
     -- { import = 'lazyvim.plugins.extras.ai.copilot-chat' },
+    -- { import = 'lazyvim.plugins.extras.ai.avante' },
+    { import = 'lazyvim.plugins.extras.ai.claudecode' },
+    { import = 'lazyvim.plugins.extras.coding.blink' },
     { import = 'lazyvim.plugins.extras.coding.yanky' },
     { import = 'lazyvim.plugins.extras.dap.core' },
     { import = 'lazyvim.plugins.extras.editor.aerial' },
