@@ -8,3 +8,5 @@ export PATH="/opt/homebrew/bin:$PATH"
 
 # mise
 eval "$(mise activate zsh)"
+
+[ -f ${ZDOTDIR:-${HOME}}/.zshrc-export ] && source ${ZDOTDIR:-${HOME}}/.zshrc-export

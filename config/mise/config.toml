@@ -1,6 +1,8 @@
 [tools]
 go = "latest"
+golangci-lint = "2.12.2"
+java = "21"
 node = "lts"
 pnpm = "latest"
-python = "latest"
+python = "3.12"
 

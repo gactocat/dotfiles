@@ -8,7 +8,6 @@
       "Bash(git:*)",
       "Bash(make:*)",
       "Bash(npm:*)",
-      "Bash(git:*)",
       "Bash(gh:*)",
       "Bash(go:*)",
       "Read(**)",
@@ -16,6 +15,15 @@
       "WebFetch(domain:*)"
     ]
   },
+  "model": "opus[1m]",
+  "enabledPlugins": {
+    "lua-lsp@claude-plugins-official": true,
+    "gopls-lsp@claude-plugins-official": true
+  },
+  "skipDangerousModePermissionPrompt": true,
+  "skipAutoPermissionPrompt": true,
+  "tui": "fullscreen",
+  "cleanupPeriodDays": 60,
   "hooks": {
     "Notification": [
       {
@@ -39,6 +47,5 @@
         ]
       }
     ]
-  },
-  "cleanupPeriodDays": 60
+  }
 }

@@ -11,6 +11,6 @@ return {
     track_selection = true,
   },
   keys = {
-    { '<leader>ac', '<cmd>ClaudeCode --allow-dangerously-skip-permissions<cr>', desc = 'Toggle Claude' },
+    { '<leader>ac', '<cmd>ClaudeCode --dangerously-skip-permissions<cr>', desc = 'Toggle Claude' },
   },
 }

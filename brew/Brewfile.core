@@ -14,6 +14,8 @@ brew "starship"
 brew "tmux"
 brew "telnet"
 
+cask "azookey"
+cask "bitwarden"
 cask "font-roboto-mono-nerd-font"
 cask "font-hack-nerd-font"
 cask "font-sauce-code-pro-nerd-font"

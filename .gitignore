@@ -4,3 +4,8 @@
 *.swo
 .*.un~
 
+**/.claude/settings.local.json
+
+# ローカル・組織固有の設定
+config/codex/config.local.toml
+config/claude/skills/team-activity-report/roster.local.md
