@@ -7,7 +7,11 @@ description: PR を作成する前に必ず通す一連のフロー。セルフ�
 
 実装が終わってから PR を出すまでの手順を固定する。目的は、レビューされていない変更が PR として外に出るのを防ぐこと。
 
-**REQUIRED SUB-SKILL:** `gh` を使う操作 (push、PR 作成、PR 情報の取得) では `gh-ops` を読み、そのルールに従う。
+**REQUIRED SUB-SKILL:**
+
+- `review-patch` — Step 1 のセルフレビュー本体
+- `commit-ja` — Step 0 / Step 1 / Step 2 で発生するコミット
+- `gh-ops` — `gh` を使う操作 (push、PR 作成、PR 情報の取得)
 
 ## 適用範囲
 
