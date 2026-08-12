@@ -23,3 +23,6 @@ echo
 zsh brew.zsh
 echo
 
+zsh npm.zsh
+echo
+

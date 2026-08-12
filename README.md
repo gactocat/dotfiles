@@ -27,6 +27,28 @@ To add a new Homebrew package:
 ./brew.zsh
 ```
 
+## Global npm packages
+
+Global npm packages (e.g. `@esaio/esa-cli`) are managed in `npm.zsh` and installed during setup.
+To add a package, append it to the `packages` array in `npm.zsh` and run:
+
+```shell
+zsh npm.zsh
+```
+
+## esa CLI and esa Skills
+
+`npm.zsh` installs [esa CLI](https://docs.esa.io/posts/590) (`@esaio/esa-cli`, requires Node.js >= 24.18.0).
+After setup, authenticate once:
+
+```shell
+esa auth login
+```
+
+The [esa-skills](https://github.com/esaio/esa-skills) plugin for Claude Code is declared in
+`config/claude/settings.json` (`extraKnownMarketplaces` + `enabledPlugins`), so Claude Code
+picks it up automatically once the settings are deployed.
+
 ## Installing languages with mise
 
 mise is included in `brew/Brewfile.dev` and available after setup.
