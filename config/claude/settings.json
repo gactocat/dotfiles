@@ -9,6 +9,7 @@
       "Bash(make:*)",
       "Bash(npm:*)",
       "Bash(gh:*)",
+      "Bash(esa:*)",
       "Bash(go:*)",
       "Read(**)",
       "Edit(~/projects/**)",
@@ -16,9 +17,18 @@
     ]
   },
   "model": "opus[1m]",
+  "extraKnownMarketplaces": {
+    "esa-skills": {
+      "source": {
+        "source": "github",
+        "repo": "esaio/esa-skills"
+      }
+    }
+  },
   "enabledPlugins": {
     "lua-lsp@claude-plugins-official": true,
-    "gopls-lsp@claude-plugins-official": true
+    "gopls-lsp@claude-plugins-official": true,
+    "esa@esa-skills": true
   },
   "skipDangerousModePermissionPrompt": true,
   "skipAutoPermissionPrompt": true,

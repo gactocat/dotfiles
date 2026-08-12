@@ -13,6 +13,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 zsh setup.zsh  # dotfilesのクローンと初期設定
 zsh deploy.zsh # シンボリックリンクの作成
 zsh brew.zsh   # Homebrewパッケージのインストール (macOSのみ)
+zsh npm.zsh    # npmグローバルパッケージのインストール (esa CLIなど)
 ```
 
 ## Repository Structure
@@ -29,6 +30,7 @@ zsh brew.zsh   # Homebrewパッケージのインストール (macOSのみ)
 - **deploy.zsh** - 各設定ファイルを適切な場所にシンボリックリンクで配置
 - **brew.zsh** - Homebrewによるパッケージ管理
 - **Brewfile** - インストールするパッケージリスト
+- **npm.zsh** - npmグローバルパッケージ管理 (esa CLIなど)
 
 ## Key Configuration Details
 
