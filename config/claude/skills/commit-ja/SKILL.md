@@ -24,3 +24,13 @@ description: ステージ済みの変更から日本語の Conventional Commits 
 - 要約は和欧文字間に半角スペースを入れる
 
 4. `git commit` を実行する。
+
+## Exception: gactocat repositories
+
+If the repository is detected as `gactocat` (see "Account selection" in `gh-ops`), write the whole message in concise English instead of Japanese. Keep the Conventional Commits format. The Japanese spacing rule does not apply.
+
+```
+<type>(<scope>): <summary in English, 50 chars or less>
+
+<optional body: why the change is needed>
+```

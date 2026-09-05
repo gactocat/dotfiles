@@ -29,6 +29,16 @@ description: PR を作成する前に必ず通す一連のフロー。セルフ�
 
 判断に迷う場合は省略せず、フローを回す。
 
+### Personal repositories owned by gactocat
+
+If the repository is detected as `gactocat` (see "Account selection" in `gh-ops`) and gactocat is the owner, do not open a PR by default. Commit with `commit-ja` (English message per its exception) and push directly to `main`.
+
+```bash
+git push origin HEAD:main
+```
+
+Open a PR only when the user explicitly asks for one, or when the repository is owned by someone else. Tell the user when you took this path.
+
 ## Step 0: 変更をコミットする
 
 `review-patch` のデフォルト対象は `main...HEAD` (コミット済みの差分) なので、先にコミットを済ませる。
@@ -72,6 +82,8 @@ crit の stderr に出る `approved: true` / `approved: false` を承認シグ�
 ## Step 3: PR を作成する
 
 approve を確認してから、はじめて push と PR 作成を行う。
+
+Before pushing, follow "Account selection" in `gh-ops`: detect the repository's account (`gyamada-ca` / `gactocat`) and align the `gh` active account and git identity. If you switched to `gactocat`, switch back to `gyamada-ca` after the PR is created.
 
 ```bash
 git push -u origin HEAD
