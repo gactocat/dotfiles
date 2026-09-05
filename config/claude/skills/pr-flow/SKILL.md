@@ -1,6 +1,6 @@
 ---
 name: pr-flow
-description: PR を作成する前に必ず通す一連のフロー。セルフレビュー (review-patch) → crit によるユーザーレビュー依頼 → approve 確認 → PR 作成 の順に進める。「PR を作って」「PR 出して」「プルリクお願い」と依頼されたとき、および実装が完了して PR 作成に移ろうとするときに使う。
+description: PR を作成する前に必ず通す一連のフロー。セルフレビュー (review-patch) → crit によるユーザーレビュー依頼 → approve 確認 → PR 作成 の順に進める。「PR を作って」「PR 出して」「プルリクお願い」と依頼されたとき、および実装が完了して PR 作成に移ろうとするときに使う。Work repositories (gyamada-ca) only. Personal repositories (gactocat) skip this flow and push to main.
 ---
 
 # PR Flow
@@ -14,6 +14,8 @@ description: PR を作成する前に必ず通す一連のフロー。セルフ�
 - `gh-ops` — `gh` を使う操作 (push、PR 作成、PR 情報の取得)
 
 ## 適用範囲
+
+This flow is for work repositories (`gyamada-ca`). For personal repositories (`gactocat`) see "Personal repositories (gactocat)" below.
 
 以下のいずれかに該当したら、このフローに入る。
 
@@ -29,15 +31,17 @@ description: PR を作成する前に必ず通す一連のフロー。セルフ�
 
 判断に迷う場合は省略せず、フローを回す。
 
-### Personal repositories owned by gactocat
+### Personal repositories (gactocat)
 
-If the repository is detected as `gactocat` (see "Account selection" in `gh-ops`) and gactocat is the owner, do not open a PR by default. Commit with `commit-ja` (English message per its exception) and push directly to `main`.
+If the repository is detected as `gactocat` (see "Account selection" in `gh-ops`), skip this flow. Step 1 (`review-patch`) and Step 2 (`crit:crit`) are work conventions; they are not required for personal projects and the user does not review through crit there. Run them only when the user explicitly asks.
+
+When gactocat owns the repository, do not open a PR either. Commit with `commit-ja` (English message per its exception) and push directly to `main`.
 
 ```bash
 git push origin HEAD:main
 ```
 
-Open a PR only when the user explicitly asks for one, or when the repository is owned by someone else. Tell the user when you took this path.
+Open a PR only when the user explicitly asks for one, or when the repository is owned by someone else. In that case go from Step 0 straight to Step 3, still without Step 1 and Step 2 unless asked. Tell the user when you took this path.
 
 ## Step 0: 変更をコミットする
 
@@ -98,5 +102,5 @@ PR の作成は `gh-ops` のルールに従う。本文には以下を含める�
 ## 禁止事項
 
 - approve を確認する前に PR を作成する
-- Step 1 または Step 2 を、ユーザーの明示的な指示なしに省略する
+- Step 1 または Step 2 を、ユーザーの明示的な指示なしに省略する (does not apply to `gactocat` repositories; see "Personal repositories (gactocat)")
 - ユーザーの代わりに approve を宣言する

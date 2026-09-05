@@ -81,7 +81,7 @@ git config user.email
 
 ### Conventions in gactocat repositories
 
-Repositories detected as `gactocat` follow the personal development rules in `~/.claude/CLAUDE.md`: write code comments, commit messages, and Markdown in concise English, and push to `main` instead of opening a PR when gactocat owns the repository.
+Repositories detected as `gactocat` follow the personal development rules in `~/.claude/CLAUDE.md`: write code comments, commit messages, and Markdown in concise English, skip the `review-patch` / `crit:crit` review flow, and push to `main` instead of opening a PR when gactocat owns the repository.
 
 ## クイックリファレンス
 

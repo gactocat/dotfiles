@@ -11,12 +11,15 @@ PR は、レビューを通してから作る。実装が終わったら、ま�
 approve を確認する前に PR を作らない。approve をこちらで代理判断しない。
 手順の詳細と例外条件は `pr-flow` skill に従う。
 
+This flow is for work repositories (`gyamada-ca`). Personal repositories (`gactocat`) skip it; see "Personal development (gactocat)" below.
+
 ## Personal development (gactocat)
 
-Two github.com accounts are in use: `gyamada-ca` for work and `gactocat` for personal projects. Detect the account from the `origin` remote host as described in "Account selection" in the `gh-ops` skill. Work repositories follow the normal flow. In `gactocat` repositories:
+Two github.com accounts are in use: `gyamada-ca` for work and `gactocat` for personal projects. Detect the account from the `origin` remote host as described in "Account selection" in the `gh-ops` skill. Work repositories follow the normal flow, including the PR flow above. In `gactocat` repositories:
 
 - Write code comments, commit messages, and Markdown in concise English. Conversation with the user stays in Japanese.
-- When gactocat owns the repository, do not open a PR by default. Commit and push directly to `main`. Open a PR only when asked.
+- Skip the review flow: do not run `review-patch` and do not request a `crit:crit` review. Both are work conventions and are not needed for personal projects. Run them only when the user asks.
+- When gactocat owns the repository, do not open a PR by default. Commit and push directly to `main`. Open a PR only when asked, and even then skip the review steps unless asked.
 
 ## Markdown 整形ルール
 
