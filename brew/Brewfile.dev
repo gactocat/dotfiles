@@ -16,6 +16,7 @@ brew "shfmt"
 brew "yq"
 
 cask "claude-code@latest"
+cask "codex"
 cask "cursor"
 cask "devutils"
 cask "docker-desktop"
