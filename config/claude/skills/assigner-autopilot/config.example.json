@@ -1,0 +1,40 @@
+{
+  "owner_name": "山田さん",
+  "state_dir": "~/.local/state/assigner-autopilot",
+  "slack_workspace_url": "https://abema.slack.com",
+  "assigner_bots": {
+    "U08PUS9AR1D": "content-eng-dev-assigner",
+    "U04N5T9M0C8": "contents-engineering-ops-assigner"
+  },
+  "self_user_ids": ["WXXXXXXXX"],
+  "repo_path": "~/src/github.com/abema/content-engineering",
+  "launcher": "plain",
+  "orca_repo_id": "",
+  "worktree_root": "~/src/github.com/abema/content-engineering-autopilot",
+  "tmux": false,
+  "claude_config_dir": "auto",
+  "models": {"detect": "haiku", "triage": "sonnet", "investigate": "opus"},
+  "permission_mode": "dontAsk",
+  "extra_allowed_tools": [],
+  "auto_classes": ["investigate", "question"],
+  "limits": {
+    "max_parallel": 1,
+    "max_per_day": 3,
+    "budget_investigate_usd": 8,
+    "budget_question_usd": 3,
+    "budget_triage_usd": 0.5,
+    "budget_detect_usd": 0.1,
+    "daily_budget_usd": 40,
+    "investigate_timeout_min": 45,
+    "triage_per_run": 2,
+    "verify_per_run": 2,
+    "max_attempts": 3,
+    "run_seconds": 240
+  },
+  "work_hours": {"days": [0, 1, 2, 3, 4], "start": "09:00", "end": "20:00"},
+  "reminder_slots": ["11:00", "14:00", "17:00"],
+  "knowledge_files": [],
+  "secretary_ledger": "",
+  "notify": true,
+  "go_live": 0
+}

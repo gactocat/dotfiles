@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<!--
+  assigner autopilot for people who do not use Orca.
+  Replace __HOME__ and __NAME__, save as ~/Library/LaunchAgents/com.__NAME__.assigner-autopilot.plist,
+  then: launchctl bootstrap gui/$(id -u) ~/Library/LaunchAgents/com.__NAME__.assigner-autopilot.plist
+  The script itself skips runs outside work_hours in the config.
+  AbandonProcessGroup keeps the background first-pass investigations alive after the dispatcher exits.
+-->
+<plist version="1.0">
+<dict>
+  <key>Label</key>
+  <string>com.__NAME__.assigner-autopilot</string>
+  <key>ProgramArguments</key>
+  <array>
+    <string>/bin/bash</string>
+    <string>__HOME__/.claude/skills/assigner-autopilot/scripts/dispatch.sh</string>
+  </array>
+  <key>StartInterval</key>
+  <integer>600</integer>
+  <key>AbandonProcessGroup</key>
+  <true/>
+  <key>StandardOutPath</key>
+  <string>__HOME__/.local/state/assigner-autopilot/launchd.log</string>
+  <key>StandardErrorPath</key>
+  <string>__HOME__/.local/state/assigner-autopilot/launchd.log</string>
+</dict>
+</plist>
