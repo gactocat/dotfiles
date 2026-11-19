@@ -7,5 +7,15 @@ cask "grok-bot"
 cask "notion"
 cask "numi"
 cask "obsidian"
+# Orca (https://orca.dev) ships from its own tap. The bare "orca" cask in
+# Homebrew is Plotly's chart exporter, an unrelated app that Homebrew has
+# disabled since 2026-09-01 because it fails the Gatekeeper check.
+# Homebrew now requires trusting third-party casks once:
+#   brew trust --cask stablyai/orca/orca
+# If Orca.app was installed from the DMG, `brew install --cask --adopt
+# stablyai/orca/orca` takes it over when the versions match. Replacing the app
+# stops every running Orca session, so do it with Orca closed.
+tap "stablyai/orca"
+cask "stablyai/orca/orca"
 cask "slack"
 cask "spotify"
