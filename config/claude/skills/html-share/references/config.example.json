@@ -1,0 +1,6 @@
+{
+  "google_account": "you@example.com",
+  "folder_id": "<Drive folder ID that the viewer serves>",
+  "webapp_url": "https://script.google.com/a/macros/<domain>/s/<deployment ID>/exec",
+  "script_file_id": "<Drive file ID of the Apps Script project, used by check>"
+}
